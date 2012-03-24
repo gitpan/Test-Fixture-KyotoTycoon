@@ -3,7 +3,7 @@ use Test::More;
 use Test::Fixture::KyotoTycoon;
 use Cache::KyotoTycoon;
 use Storable qw(thaw);
-use YAML::Syck;
+use YAML::XS qw(LoadFile);
 
 my $fixture_yaml = "t/fixture.yaml";
 my $arrayref     = LoadFile($fixture_yaml);

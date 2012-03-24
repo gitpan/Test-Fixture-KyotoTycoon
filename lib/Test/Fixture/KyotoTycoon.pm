@@ -1,14 +1,15 @@
 package Test::Fixture::KyotoTycoon;
 use strict;
 use warnings;
+use 5.008000;
 use parent qw(Exporter);
 use Carp;
 use Kwalify;
 use Storable qw(nfreeze);
-use YAML::Syck;
+use YAML::XS qw(LoadFile);
 
 our @EXPORT = qw(construct_fixture);
-our $VERSION = '0.01';
+our $VERSION = '0.1';
 
 sub construct_fixture {
 
@@ -102,6 +103,10 @@ __END__
 
 Test::Fixture::KyotoTycoon - load fixture data to kyototycoon
 
+=head1 VERSION
+
+0.1
+
 =head1 SYNOPSIS
 
   # in your t/fixture.yaml
@@ -189,7 +194,7 @@ holly E<lt>emperor.kurt@gmail.comE<gt>
 
 =head1 SEE ALSO
 
-L<Cache::KyotoTycoon> L<Kwalify> L<YAML::Syck>
+L<Cache::KyotoTycoon> L<Kwalify> L<YAML::XS>
 
 =head1 LICENSE
 

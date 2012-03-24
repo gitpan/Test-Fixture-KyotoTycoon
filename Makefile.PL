@@ -4,7 +4,7 @@ all_from 'lib/Test/Fixture/KyotoTycoon.pm';
 
 requires
 	'Cache::KyotoTycoon' => '0.12',
-	'YAML::Syck'         => '1.20',
+	'YAML::XS'           => '0.38',
 	'Kwalify'            => '1.21',
 ;
 
@@ -14,4 +14,7 @@ author_tests 'xt';
 test_requires 'Test::More';
 auto_set_repository;
 auto_include;
+
+install_script "bin/make_kt_fixture";
+
 WriteAll;

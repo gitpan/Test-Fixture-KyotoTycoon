@@ -8,3 +8,6 @@ __DATA__
 holly
 emperor.kurt@gmail.com
 Test::Fixture::KyotoTycoon
+YAML
+ktserver
+kyototycoon
