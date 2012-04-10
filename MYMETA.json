@@ -4,7 +4,7 @@
       "holly <emperor.kurt@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120351",
+   "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120351",
    "license" : [
       "perl_5"
    ],
@@ -15,8 +15,9 @@
    "name" : "Test-Fixture-KyotoTycoon",
    "no_index" : {
       "directory" : [
+         "inc",
          "t",
-         "inc"
+         "xt"
       ]
    },
    "prereqs" : {
@@ -27,7 +28,7 @@
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "ExtUtils::MakeMaker" : "6.59"
          }
       },
       "runtime" : {
@@ -41,5 +42,13 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ],
+      "repository" : {
+         "url" : "git://github.com/holly/perl-Test-Fixture-KyotoTycoon.git"
+      }
+   },
    "version" : "0.11"
 }
