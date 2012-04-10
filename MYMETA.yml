@@ -5,9 +5,9 @@ author:
 build_requires:
   ExtUtils::MakeMaker: 6.59
 configure_requires:
-  ExtUtils::MakeMaker: 6.59
+  ExtUtils::MakeMaker: 0
 dynamic_config: 0
-generated_by: 'Module::Install version 1.06, CPAN::Meta::Converter version 2.120351'
+generated_by: 'ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120351'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,15 +15,12 @@ meta-spec:
 name: Test-Fixture-KyotoTycoon
 no_index:
   directory:
-    - inc
     - t
-    - xt
+    - inc
 requires:
   Cache::KyotoTycoon: 0.12
   Kwalify: 1.21
   YAML::XS: 0.38
+  parent: 0.225
   perl: 5.008
-resources:
-  license: http://dev.perl.org/licenses/
-  repository: git://github.com/holly/perl-Test-Fixture-KyotoTycoon.git
-version: 0.1
+version: 0.11

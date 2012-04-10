@@ -9,7 +9,7 @@ use Storable qw(nfreeze);
 use YAML::XS qw(LoadFile);
 
 our @EXPORT = qw(construct_fixture);
-our $VERSION = '0.1';
+our $VERSION = '0.11';
 
 sub construct_fixture {
 

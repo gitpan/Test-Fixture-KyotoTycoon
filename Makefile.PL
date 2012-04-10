@@ -6,6 +6,7 @@ requires
 	'Cache::KyotoTycoon' => '0.12',
 	'YAML::XS'           => '0.38',
 	'Kwalify'            => '1.21',
+	'parent'             => '0.225',
 ;
 
 tests 't/*.t';

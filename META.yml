@@ -23,8 +23,9 @@ requires:
   Cache::KyotoTycoon: 0.12
   Kwalify: 1.21
   YAML::XS: 0.38
+  parent: 0.225
   perl: 5.8.0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/holly/perl-Test-Fixture-KyotoTycoon.git
-version: 0.1
+version: 0.11
