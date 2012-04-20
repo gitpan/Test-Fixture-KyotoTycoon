@@ -18,7 +18,11 @@ if ($@) {
 
 # find kyototycoon
 chomp(my $kt_bin = readpipe "which ktserver 2>/dev/null");
-$kt_bin ||= $ENV{KYOTOTYCOON_PATH};
+my $exit_value = $? >> 8;
+if ($exit_value != 0) {
+	$kt_bin = $ENV{KYOTOTYCOON_PATH};
+}
+
 if(!$kt_bin) {
 	plan skip_all => 'ktserver can not find. If it is installed in a location path is not passed, set the case kyototycoon path to KYOTOTYCOON_PATH environ variable';
 }

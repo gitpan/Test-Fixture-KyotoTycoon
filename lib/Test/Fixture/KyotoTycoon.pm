@@ -9,7 +9,7 @@ use Storable qw(nfreeze);
 use YAML::XS qw(LoadFile);
 
 our @EXPORT = qw(construct_fixture);
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 sub construct_fixture {
 
@@ -105,7 +105,7 @@ Test::Fixture::KyotoTycoon - load fixture data to kyototycoon
 
 =head1 VERSION
 
-0.12
+0.13
 
 =head1 SYNOPSIS
 
